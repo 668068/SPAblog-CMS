@@ -1,0 +1,6 @@
+/admin (后台管理界面) 的代码
+在 SEED_TEMPLATES 对象里的 "admin.html": ... 这一行。
+
+这这是整个后台的核心。
+它是一个 单页应用 (SPA)。里面包含了 <div id="login-app"> (登录界面) 和 <div id="admin-app"> (管理界面)。
+所有的 JS 交互逻辑（比如 function login(), function savePost(), function saveFile()）都写在这个字符串里的 <script> 标签中。
