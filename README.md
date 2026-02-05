@@ -10,6 +10,10 @@ Admin UI: 一个单页应用 (SPA)，其 HTML 也存储在 R2 中。
 第一步：在 Cloudflare 后台创建资源
 D1 数据库:
 
+
+
+
+
 进入 Workers & Pages -> D1 -> Create。
 名称：blog_db。
 创建后无需做任何操作，不需要在控制台建表（脚本会帮你建）。
@@ -22,6 +26,10 @@ R2 存储桶:
 
 进入 Workers & Pages -> Overview -> Create Application -> Create Worker。
 命名为 my-cloud-blog，点击 Deploy。
+
+
+
+
 第二步：绑定环境变量 (至关重要)
 进入你刚才创建的 Worker 的 Settings -> Variables：
 
@@ -34,8 +42,14 @@ D1 Database: 选择 blog_db
 Environment Variables (用于设置初始账号):
 添加变量 ADMIN_USER，值设为 admin
 添加变量 ADMIN_PASS，值设为 password123 (安装后可改)
+
+
+
 第三步：部署代码
 点击 Edit code，删除左侧 worker.js 里的所有代码，复制粘贴完整核心代码。
+
+
+
 
 第四步：初始化安装
 保存代码后，点击右上角的 Deploy。
