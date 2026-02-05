@@ -1,0 +1,4 @@
+/assets/style.css 的代码
+在 SEED_TEMPLATES 对象里的 "style.css": ... 这一行。
+
+它是一段压缩过的 CSS 字符串，包含了页面的布局、字体、Cookie 弹窗的样式。
